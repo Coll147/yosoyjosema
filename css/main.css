@@ -20,23 +20,45 @@ nav ul li {
     margin-right: 20px;
 }
 
+nav ul li:first-child {
+    margin-left: 20px; /* Establecemos un margen solo para el primer botón */
+}
+
+
 nav ul li a {
     text-decoration: none;
     color: #fff;
     border: 2px solid #fff;
     border-radius: 20px;
-    padding: 5px 10px;
+    padding: 5px 20px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #fff;
-    color: #333;
+    background-color: #fff; /* Estilo al pasar el cursor por encima */
+    color: #333; /* Cambiamos el color del texto al pasar el cursor por encima */
+}
+
+nav ul li a.activo {
+    background-color: #333; /* Fondo diferente para el botón activo */
+    color: #fff; /* Cambiamos el color del texto para el botón activo */
 }
 
 section {
-    text-align: center;
+    display: flex; /* Para crear una disposición en fila (foto a la izquierda, texto a la derecha) */
+    align-items: center; /* Para centrar verticalmente los elementos */
     margin-top: 20px;
+}
+
+#contenedorImagen {
+    flex: 1; /* La imagen ocupará el 50% del espacio disponible en la fila */
+}
+
+#textoDerecha {
+    flex: 1; /* El texto ocupará el 50% del espacio disponible en la fila */
+    text-align: left; /* Alineamos el texto a la izquierda */
+    font-family: 'Oswald', sans-serif; /* Cambiamos la tipografía */
+    font-size: 35px; /* Ajustamos el tamaño del texto */
 }
 
 section p {
