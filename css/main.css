@@ -31,17 +31,17 @@ nav ul li a {
     border: 2px solid #fff;
     border-radius: 20px;
     padding: 5px 20px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s; /* Agregamos una transición para el efecto */
 }
 
 nav ul li a:hover {
-    background-color: #fff; /* Estilo al pasar el cursor por encima */
-    color: #333; /* Cambiamos el color del texto al pasar el cursor por encima */
+    transform: scale(1.50); /* Aumentamos el tamaño al pasar el cursor por encima */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Agregamos una sombra al pasar el cursor por encima */
 }
 
 nav ul li a.activo {
-    background-color: #333; /* Fondo diferente para el botón activo */
-    color: #fff; /* Cambiamos el color del texto para el botón activo */
+    background-color: #fff;
+    color: #333;
 }
 
 section {
