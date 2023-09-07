@@ -1,5 +1,5 @@
 const imagen = document.getElementById('cambiarImagen');
-const imagenes = ['/assets/josemaRosa.png', '/assets/josemaCalvo.png'];
+const imagenes = ['assets/josemaRosa.png', 'assets/josemaCalvo.png'];
 let index = 0;
 
 function cambiarImagen() {
