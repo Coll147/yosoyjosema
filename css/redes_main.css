@@ -1,0 +1,26 @@
+.redes-sociales {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.red-social {
+    text-align: center;
+    max-width: 200px; /* Ancho máximo de cada elemento */
+    margin: 20px;
+}
+
+.red-social img {
+    max-width: 100%;
+    height: auto;
+}
+
+.red-social h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.red-social p {
+    font-size: 14px;
+    color: #777;
+}

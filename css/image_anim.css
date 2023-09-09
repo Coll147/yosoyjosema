@@ -1,5 +1,9 @@
 #cambiarImagen {
-    width: 300px;
-    height: 200px;
+    width: 80%;
+    height: 80%;
+    object-fit: contain; /* Puedes usar "contain" para que la imagen mantenga su relación de aspecto y ajuste todo el contenido dentro del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: transform 0.5s, opacity 0.5s; /* Agregamos una transición para suavizar el cambio */
 }
