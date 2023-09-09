@@ -1,8 +1,9 @@
-body {
+html, body {
+    height: 100%; /* Hacemos que html y body ocupen toda la altura de la ventana */
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
 }
+
 
 header {
     background-color: #333;
@@ -24,7 +25,6 @@ nav ul li:first-child {
     margin-left: 20px; /* Establecemos un margen solo para el primer botón */
 }
 
-
 nav ul li a {
     text-decoration: none;
     color: #fff;
@@ -45,22 +45,59 @@ nav ul li a.activo {
 }
 
 section {
-    display: flex; /* Para crear una disposición en fila (foto a la izquierda, texto a la derecha) */
-    align-items: center; /* Para centrar verticalmente los elementos */
+    display: flex;
+    align-items: center;
+    height: 100%;
     margin-top: 20px;
-}
-
-#contenedorImagen {
-    flex: 1; /* La imagen ocupará el 50% del espacio disponible en la fila */
-}
-
-#textoDerecha {
-    flex: 1; /* El texto ocupará el 50% del espacio disponible en la fila */
-    text-align: left; /* Alineamos el texto a la izquierda */
-    font-family: 'Oswald', sans-serif; /* Cambiamos la tipografía */
-    font-size: 35px; /* Ajustamos el tamaño del texto */
 }
 
 section p {
     margin-top: 10px;
+}
+
+
+.contenedor-mitades {
+    display: flex;
+}
+
+.mitad-izquierda,
+.mitad-derecha {
+    flex: 1;
+    height: 100vh;
+}
+
+.mitad-izquierda {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mitad-derecha {
+    text-align: left;
+    font-family: "Arial", sans-serif;
+    font-size: 18px;
+    padding: 20px;
+}
+
+
+#contenedorImagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cambiarImagen {
+    max-width: 100%;
+    height: 100%; /* Establecemos la altura al 100% para que ocupe todo el espacio vertical disponible */
+    width: auto; /* Mantenemos el ancho automático para mantener la relación de aspecto */
+    object-fit: contain; /* Mantenemos la relación de aspecto y ajustamos la imagen al contenedor */
+}
+
+#textoDerecha {
+    flex: 1;
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
 }
